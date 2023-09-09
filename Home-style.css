@@ -1,0 +1,297 @@
+*{
+    padding: 0 ;
+    margin: 0 ;
+}
+
+body{
+    background-color: #d6d4b2;
+}
+
+/* Navbar */
+
+.nav-main{
+    height:64px ;
+    width: 100% ;
+    background-color: #08546f;
+    color: #d6d4b2;
+    position: fixed ;
+    top: 0 ;
+    display: flex ;
+    justify-content: space-around ;
+    align-items: center;
+    align-self: flex-end;
+    z-index: 5;
+}
+
+.nav-search{
+    width: 40% ;
+    display: flex;
+}
+
+.search-select{
+    width: 50px ;
+    border: none;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px ;
+}
+
+#nav-search{
+    height: 36px ;
+    width: 100% ;
+    border: none;
+    background-color: white;
+    border-top-right-radius: 4px ;
+    border-bottom-right-radius: 4px ;
+}
+
+.search-icon{
+    background-color: white;
+}
+
+.nav-loc{
+    font-size: 1rem ;
+    border: none;
+    text-align: center;
+    color: white;
+    background-color: #08546f;
+}
+
+#nav-login{
+    height: 25px ;
+    width: 67px ;
+    border: none ;
+    border-radius: 4px  ;
+    background-color: #539ca8;
+    color: white ;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none ;
+    font-size: 1.2rem;
+    color: white;
+    margin-right: 20px ;
+}
+
+.nav-sub{
+    height: 40px ;
+    width: 100% ;
+    position: fixed ;
+    top: 64px ;
+    display: flex;
+    background-color: #539ca8;
+    z-index: 5 ;
+}
+
+.offers{
+    height: 100% ;
+    width: 50% ;
+    display: flex;
+    justify-content: flex-start ;
+    align-items: center ;
+}
+
+.nav-reach{
+    height: 100% ;
+    width: 50% ;
+    display: flex;
+    justify-content: flex-end ;
+    align-items: center ;
+    margin-right: 10% ;
+}
+
+.nav-text{
+    color: white;
+    margin-left: 20px  ;
+    font-size: 1.2rem ;
+}
+
+header{
+    z-index: 2;
+}
+
+.back-content{
+    height: 600px ;
+    width: 100% ;
+    position: absolute;
+    top: 104px ;
+    background-image: url("img_122803_media_and_entertainment.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #a4dbd8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end ;
+}   
+
+.hero-mess {
+    height: 40px ;
+    width: 90% ;
+    color: black ;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center ; 
+    font-size: 1.2rem ;
+    margin-bottom: 25px ;
+}
+
+.events-info{
+    height: auto ;
+    width: 100% ;
+    background-color : #a4dbd8 ;
+    display: flex ;
+    flex-wrap: wrap ;
+    justify-content: space-evenly ;
+    position: absolute ;
+    top: 704px ;
+}
+
+.box{
+    height: 100%  ;
+    width: 30% ;
+    background-color: white ;
+    padding: 20px 0px 15px ;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center ;
+    align-content: center ;
+    margin: 9px -30px;
+}
+
+.box a {
+    color: black
+}
+
+.box-movie{
+    height: 300px ;
+    background-size: contain ;
+    background-repeat: no-repeat ;
+    background-position: center;
+} 
+
+.box p{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.foot-info{
+    height: 120px ;
+    width: 100% ;
+    position: absolute;
+    top: 222vh ;
+    background-color: #08546f ;
+    color: white ;
+    display: flex ;
+    flex-direction: column ;
+}
+
+.About-us{
+    position: absolute ;
+    display: flex ;
+    flex-direction: column ;
+    justify-content: center ;
+    align-items: center ;
+    margin: auto;
+}
+
+.About-us h1,p {
+    text-align: center ;
+}
+
+.contact-us{
+    height: 40px ;
+    width: 100% ;
+    display: flex ;
+}
+
+.email , .phone {
+    height: 100% ;
+    width: 50% ;
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+    color: white ;
+    font-size: 1.2rem ;
+}
+
+@media screen and (max-width:400px){
+    #nav-search{
+        height: 20px ;
+    }
+
+    .nav-loc{
+        font-size: 0.75rem;
+    }
+
+    .offers{
+        width: 50vw ;
+        font-size: 0.5rem;
+        display: flex ;
+        justify-content: flex-start;
+    }
+
+    .offers p{
+        font-size: 0.7rem ;
+        margin: 12px 8px ;
+    }
+
+    .nav-reach{
+        width: 50vw ;
+        margin-right: 0%;
+    }
+
+    .nav-reach a {
+        font-size: 0.75rem ;
+        margin: 12px 8px ;
+        
+    }
+
+    .nav-text{
+        margin: none ;
+        font-size: 0.75rem;
+    }    
+
+    .back-content{
+        height: 50vh ;
+    }
+
+    .hero-mess p{
+        text-align: center;
+        font-size: 0.75rem ;
+    }
+
+    .events-info{
+        top: 480px ;
+    }
+
+    .box{
+        height: 35vh;
+        width: 45vw ;
+        margin: 7px 0px ;
+    }
+
+    .box p {
+        font-size: 0.75rem ;
+    }
+
+    .box-movie{
+        height: 200px ;
+    }
+
+    .foot-info{
+        height: 200px ;
+        width: 100% ;
+        position: absolute;
+        top: 185.5vh ;
+        background-color: #08546f ;
+        color: white ;
+    }
+
+    .email , .phone{
+        font-size: 0.9rem ;
+    }
+}
+

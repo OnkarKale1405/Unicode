@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<style>
+    
+    *{
+        padding: 0 ;
+        margin: 0 ;
+}
+
+    body{
+        background-color: #d6d4b2;
+}
+
+    .nav-main{
+    height:64px ;
+    width: 100% ;
+    background-color: #08546f;
+    color: #d6d4b2;
+    position: fixed ;
+    top: 0 ;
+    display: flex ;
+    justify-content: space-around ;
+    align-items: center;
+    align-self: flex-end;
+    z-index: 5;
+}
+
+.nav-search{
+    width: 40% ;
+    display: flex;
+}
+
+.search-select{
+    width: 50px ;
+    border: none;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px ;
+}
+
+#nav-search{
+    height: 36px ;
+    width: 100% ;
+    border: none;
+    background-color: white;
+    border-top-right-radius: 4px ;
+    border-bottom-right-radius: 4px ;
+}
+
+.search-icon{
+    background-color: white;
+}
+
+.nav-loc{
+    font-size: 1rem ;
+    border: none;
+    text-align: center;
+    color: white;
+    background-color: #08546f;
+}
+
+#nav-login{
+    height: 25px ;
+    width: 67px ;
+    border: none ;
+    border-radius: 4px  ;
+    background-color: #539ca8;
+    color: white ;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none ;
+    font-size: 1.2rem;
+    color: white;
+    margin-right: 20px ;
+}
+
+.nav-sub{
+    height: 40px ;
+    width: 100% ;
+    position: fixed ;
+    top: 64px ;
+    display: flex;
+    background-color: #539ca8;
+    z-index: 5 ;
+}
+
+.offers{
+    height: 100% ;
+    width: 60% ;
+    display: flex;
+    justify-content: flex-start ;
+    align-items: center ;
+}
+
+.nav-reach{
+    height: 100% ;
+    width: 60% ;
+    display: flex;
+    justify-content: flex-end ;
+    align-items: center ;
+    margin-right: 10% ;
+}
+
+.nav-text{
+    color: white;
+    margin-left: 20px  ;
+    font-size: 1.2rem ;
+}
+
+header{
+    z-index: 2;
+}
+
+.content{
+    position: absolute ;
+    top: 104px ;
+    margin-left: 5rem ;
+    height: 500px ;
+    width: 90% ;
+    display: flex ;
+    background-color: #d6d4b2 ;
+}
+
+.poster{
+    height: 100% ;
+    width: 30% ;
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+}
+
+.poster img {
+    height: 30rem;
+}
+
+.event-info{
+    height: 100% ;
+    width: 70%  ;
+    font-size: 2rem ;
+    display: flex ;
+    flex-direction: column ;
+    justify-content: center ;
+    align-items: self-start ;
+}
+
+.event-info button {
+    letter-spacing: 0.2px;
+    font-size: 18px;
+    padding: 12px 8px ;
+    font-weight: 500;
+    border-radius: 4px ;
+    line-height: 24px ;
+}
+
+.event-info button:hover {
+    background-color: #539ca8; 
+    cursor: pointer;
+}
+
+.event-desc{
+    height: auto ;
+    width: auto ;
+    position: absolute ;
+    top: 604px ;
+    font-size: 1.2rem ;
+    text-align: left ;
+}
+
+.cast{
+    width: 60% ;
+    text-align: center ;
+    font-size: 1.2rem;
+    display: flex ;
+    justify-content: space-evenly;
+    margin-left: 2rem ;
+}
+
+.cast-img-info img {
+    height: 10rem ;
+    border : 2px white ;
+    border-radius: 50% ;
+}
+
+.foot-info{
+    height: 120px ;
+    width: 100% ;
+    position: absolute;
+    top: 175vh ;
+    background-color: #08546f ;
+    color: white ;
+    display: flex ;
+    flex-direction: column ;
+}
+
+.About-us{
+    position: absolute ;
+    display: flex ;
+    flex-direction: column ;
+    justify-content: center ;
+    align-items: center ;
+    margin: auto;
+}
+
+.About-us h1,p {
+    text-align: center ;
+}
+
+.contact-us{
+    height: 40px ;
+    width: 100% ;
+    display: flex ;
+}
+
+.email , .phone {
+    height: 100% ;
+    width: 50% ;
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+    color: white ;
+    font-size: 1.2rem ;
+}
+
+
+    @media screen and (max-width: 400px) {
+
+        .nav-main {
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav-search {
+            width: 80%;
+            margin-top: 10px;
+            display: flex ;
+            justify-content: center;
+        }
+
+        .search-select {
+            height: 32px ;
+            width: 20%;
+        }
+
+        #nav-search {
+            height: 32px;
+            width: 60%;
+        }
+
+        .search-icon {
+            background-color: white;
+            padding: 6px;
+        }
+
+        .nav-loc {
+            font-size: 0.75rem;
+        }
+
+        .offers {
+            width: 80%;
+            font-size: 0.75rem;
+            text-align: center ;
+        }
+
+        .nav-reach {
+            width: 80%;
+            margin-right: 0%;
+        }
+
+        .nav-reach a {
+            font-size: 0.75rem;
+            margin: 6px;
+        }
+
+        .nav-text {
+            font-size: 0.75rem;
+            margin: none;
+            text-align: center;
+        }
+
+        .content{
+            display: flex ;
+            flex-direction: column;
+        }
+
+        .poster img {
+            height: 60vh;
+            width: 80vw;
+            margin-top: 1rem ;
+            margin-left: 44vw;
+            justify-content: center;
+        }
+
+        .event-info {
+            font-size: 1rem;
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        .event-info button {
+            font-size: 0.875rem;
+            padding: 6px 12px;
+            margin-top: 1rem;
+            margin-left: 20vw ;
+        }
+
+        .event-info h1 {
+            margin-bottom: 2rem ;
+        }
+
+        .event-desc {
+            font-size: 1rem;
+            margin-top: 1rem;
+            margin-left: 0.5rem ;
+            position: absolute ;
+            top: 100vh ;
+        }
+
+        .event-desc p {
+            text-align: left;
+        }
+
+        .cast{
+            display: flex ;
+            flex-direction: column;
+            margin-left: 35vw ;
+        }
+
+        .cast-img-info {
+            width: 45%;
+            margin: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cast-img-info img {
+
+            max-width: 150%;
+            height: auto;
+        }
+
+        .foot-info {
+            width: 110vw;
+            top: 242vh ;
+        }
+
+        .event-desc p {
+            text-align: center;
+        }
+
+        .email , .phone {
+            font-size: 1rem;
+            background-color: #08546f;
+        }
+    }
+    
+</style>
+<body>
+    <header>
+        <div class="nav-main">
+            <p >LOGO</p>
+
+            <div class="nav-search">
+                <select class="search-select">
+                    <option >All</option>
+                </select>
+                <input placeholder=" Search Events " id="nav-search">
+            </div>
+
+            <select class="nav-loc" >
+                <option >Location</option>
+            </select>
+            <a href="Login.html" target="_blank"><button id="nav-login">sign in</button></a>
+        </div>
+
+        <div class="nav-sub">
+            <div class="offers">
+                <p class="nav-text">Events</p>
+                <p class="nav-text">Activities</p>
+                <p class="nav-text">Shows</p>
+                <p class="nav-text">Offers</p>
+                <p class="nav-text">Gift cards</p>
+            </div>
+            <div class="nav-reach">
+                <a href="Homepage.html" target="_self">Home</a>
+                <a href="Events.html">Events</a>
+                <a href="#">About Us</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="poster">
+            <img src="Music_2.png">
+        </div>
+        <div class="event-info">
+            <h1>The Lead Pipes</h1>
+            <p>Duration : 2hr 30min</p>
+            <P>Songs :Hindi ,English</P>
+            <p>Date : 14 May 2023</p>
+            <button>Book Tickets</button>
+        </div>
+    </div>
+
+    <div class="event-desc"><br>
+        <h1>Description :</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quasi culpa! Quaerat accusamus rem assumenda, temporibus a vitae eligendi numquam maxime reiciendis expedita ipsam neque voluptatem iste nostrum delectus? Quibusdam!
+        Est eius eos quidem saepe voluptas corporis nesciunt deserunt, obcaecati, accusantium rem at aliquid praesentium minus excepturi culpa sed cupiditate, quis nostrum ut delectus. Maiores aut earum amet eligendi nobis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magnam officiis cum, eveniet illum, minima labore nobis dignissimos consectetur quod aliquam cupiditate. Culpa saepe eum iure repudiandae, dolorum molestiae maxime!</p><br>
+        <p><h1>Venue :</h1><br>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, eveniet? 
+        </p><br>
+        <p><h1>Cast :</h1> <br>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet voluptates in quis magni, hic dolorum odit voluptatem possimus tempore suscipit cum delectus voluptatibus tenetur accusamus, ut placeat provident quas at?
+        </p><br>
+
+        <div class="cast">
+            <div class="cast-img-info">
+                <img src="cast_4.avif" >
+                <p>Shreya Ghoshal</p>
+            </div>
+            <div class="cast-img-info">
+                <img src="cast_2.avif" >
+                <p>Anirudh Pathak</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot-info">
+            <div class="About-us">
+                <h1>About Us</h1>
+                <p>Lorem ipsum, dolor sit ameit unde voluptas eligendi quos quam fuga laboriosam? Tempora illo dolor fugit accusamus, dolorem reiciendis minima molestiae.
+                 nobis sunt omnis rem! Laborum distinctio optio corporis aut</p>
+                <div class="contact-us"><br><br>
+                    <div class="email">bookyoureve@gmail.com</div>
+                    <div class="phone">9842642852</div>
+                </div>    
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
